@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h2>Web<span id="Span">Qize</span></h2>
+
+        <ul id="Nav-bar">
+            <li class="first onMobile"><a href="#">HTML</a></li>
+            <li class="onMobile"><a href="#">CSS</a></li>
+            <li class="onMobile"><a href="#">JavaScript</a></li>
+            <li class="onMobile"><a href="#">React</a></li>
+            <li onclick="Show()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+
+        <ul id="hide">
+            <li onclick="Hide()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li class="first"><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+        </ul>
+    </nav>
+    
+    HERO SECTION
+
+    <div class="section">
+        <img src="images/hero.webp" alt="hero image">
+        <div class="hero-text">
+            <h2 id="header">Test Your Knowledge</h2>
+            <p>Test your programing Knowledge with this
+                simple question and answer<br> to know if you are Good😁
+                or not🥲
+            </p>
+            <button class="btn" onclick="Btn()">Start</button>
+        </div>
+    </div>
+
+    <div class="card-box">
+        <div class="card-container">
+            <button class="card card1">
+                <a href="http://127.0.0.1:5500/buttons/answer.html#">HTML</a>
+            </button>
+
+            <button class="card card2">
+                <a href="http://127.0.0.1:5500/buttons/css.html">CSS</a>
+            </button>
+
+            <button class="card card3">
+               <a href="http://127.0.0.1:5500/buttons/Java.html">JavaScript</a>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

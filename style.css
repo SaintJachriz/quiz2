@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: #000; */
+}
+
+nav{
+    display: flex;
+    width: auto;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+}
+
+nav h2{
+    font-size: 24px;
+    padding: 12px 12px;
+    color: blue;
+}
+
+nav h2 span{
+    font-size: 20px;
+    color: red;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.first{
+    padding: 13px 13px;
+    background: #000;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.first:hover{
+    background: transparent;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: cadetblue;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: darkgoldenrod;
+}
+
+#hide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 250px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(20, 19, 19, 0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+#hide ul{
+    margin: 10px;
+}
+
+
+.section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+img{
+    margin-top: 10px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+.hero-text{
+    margin-top: 18%;
+}
+
+.fa-bars{
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-text h2{
+    text-align: center;
+    font-size: 36px;
+    color: darkgoldenrod;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+     cursor: pointer;
+}
+
+.header{
+    transition: all 2s ease-in-out;
+}
+
+.hero-text p{
+    font-size: 19px;
+    font-weight: 400px;
+    letter-spacing: 1.5;
+    /* text-transform: uppercase; */
+    text-align: left;
+    margin-left: 7%;
+}
+
+.btn{
+    background: darkgoldenrod;
+    color: white;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 6px;
+    align-items: center;
+    margin-left: 36px;
+}
+
+.btn:hover{
+    margin-left: 50px;
+    background-color: #fff;
+    color: #000;
+}
+
+.card-container{
+    display: flex;
+    margin: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+    padding: 40px 80px;
+    margin: 30px;
+    transition: all 0.3s ease;
+}
+
+.card a{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-box{
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+.card1{
+    background: yellow;
+    border: none;
+}
+
+.card2{
+    background: green;
+    border: none;
+}
+
+.card3{
+    background: blue;
+    border: none;
+}
+
+.card:hover{
+    transform: scaleY(1.07);
+}
+
+@media (max-width: 768px) {
+    .onMobile{
+        display: none;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+
+    .section{
+        display: grid;
+        /* text-align: center; */
+    }
+
+    .hero-text p{
+        text-align: center;
+        margin-left: 0;
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    img{
+        align-self: center;
+        width: 400px;
+        height: 400px;
+    }
+
+    .btn:hover{
+        margin-left: 0;
+        background-color: lightblue;
+    }
+
+    .hero-text h2{
+        padding: 20px;
+    }
+
+    .hero-text{
+        padding: 20px;
+    }
+
+    .card-container{
+        display: block;
+        margin: 0;
+    }
+
+    .card-box{
+        margin-left: 7%;
+        margin-top: 10px;
+    }
+
+    .BUT2{
+        padding: 20px 40px;
+    }
+}
+
+.body{
+    text-align: center;
+    background: #234;
+}
+
+.Btn{
+    padding: 40px 70px;
+    margin: 20px;
+    transition: all 0.5s ease;
+}
+
+.container{
+    margin-top: 20%;
+}
+
+.container a{
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.BUT1{
+    background: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.BUT2{
+    background: green;
+    border: none;
+    cursor: pointer;
+}
+
+.BUT3{
+    background: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.Btn:hover{
+    transform: scale(1.07);
+}
+
+.fa-arrow-left{
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+}
